@@ -94,10 +94,10 @@ install(TARGETS mk_api
 # endif()
 
 # strip裁剪符号及调试信息
-# if(NOT ENABLE_API_STATIC_LIB AND NOT MSVC)
-#   add_custom_command(TARGET mk_api POST_BUILD
-#     COMMAND ${CMAKE_STRIP} --strip-unneeded $<TARGET_FILE:mk_api>
-#     COMMENT "Stripping symbols to reduce size"
-#   )
-# endif()
+if(NOT ENABLE_API_STATIC_LIB AND NOT MSVC)
+  add_custom_command(TARGET mk_api POST_BUILD
+    COMMAND ${CMAKE_STRIP} --strip-unneeded $<TARGET_FILE:mk_api>
+    COMMENT "Stripping symbols to reduce size"
+  )
+endif()
 
