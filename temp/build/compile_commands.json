@@ -1,0 +1,458 @@
+[
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/jsoncpp.dir/jsoncpp/src/lib_json/json_reader.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/src/lib_json/json_reader.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/src/lib_json/json_reader.cpp",
+  "output": "3rdpart/CMakeFiles/jsoncpp.dir/jsoncpp/src/lib_json/json_reader.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/jsoncpp.dir/jsoncpp/src/lib_json/json_value.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/src/lib_json/json_value.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/src/lib_json/json_value.cpp",
+  "output": "3rdpart/CMakeFiles/jsoncpp.dir/jsoncpp/src/lib_json/json_value.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/jsoncpp.dir/jsoncpp/src/lib_json/json_writer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/src/lib_json/json_writer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/src/lib_json/json_writer.cpp",
+  "output": "3rdpart/CMakeFiles/jsoncpp.dir/jsoncpp/src/lib_json/json_writer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Buffer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Buffer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Buffer.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Buffer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/BufferSock.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/BufferSock.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/BufferSock.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/BufferSock.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Server.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Server.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Server.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Server.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Session.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Session.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Session.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Session.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Socket.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Socket.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/Socket.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/Socket.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/TcpClient.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/TcpClient.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/TcpClient.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/TcpClient.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/TcpServer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/TcpServer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/TcpServer.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/TcpServer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/UdpServer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/UdpServer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/UdpServer.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/UdpServer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/sockutil.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/sockutil.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Network/sockutil.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Network/sockutil.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/EventPoller.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/EventPoller.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/EventPoller.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/EventPoller.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/Pipe.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/Pipe.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/Pipe.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/Pipe.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/PipeWrap.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/PipeWrap.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/PipeWrap.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/PipeWrap.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/SelectWrap.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/SelectWrap.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/SelectWrap.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/SelectWrap.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/Timer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/Timer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Poller/Timer.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Poller/Timer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Thread/TaskExecutor.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Thread/TaskExecutor.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Thread/TaskExecutor.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Thread/TaskExecutor.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Thread/WorkThreadPool.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Thread/WorkThreadPool.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Thread/WorkThreadPool.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Thread/WorkThreadPool.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/CMD.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/CMD.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/CMD.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/CMD.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/File.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/File.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/File.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/File.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/MD5.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/MD5.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/MD5.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/MD5.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/NoticeCenter.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/NoticeCenter.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/NoticeCenter.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/NoticeCenter.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/SHA1.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/SHA1.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/SHA1.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/SHA1.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/SSLBox.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/SSLBox.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/SSLBox.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/SSLBox.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/SSLUtil.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/SSLUtil.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/SSLUtil.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/SSLUtil.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/base64.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/base64.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/base64.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/base64.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/local_time.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/local_time.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/local_time.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/local_time.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/logger.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/logger.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/logger.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/logger.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/mini.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/mini.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/mini.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/mini.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/util.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/util.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/util.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/util.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/3rdpart",
+  "command": "/usr/bin/g++ -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -DSOCKET_DEFAULT_BUF_SIZE=262144 -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/uv_errno.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/uv_errno.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src/Util/uv_errno.cpp",
+  "output": "3rdpart/CMakeFiles/zltoolkit.dir/ZLToolKit/src/Util/uv_errno.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Codec/Transcode.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Codec/Transcode.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Codec/Transcode.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Codec/Transcode.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/MediaSink.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/MediaSink.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/MediaSink.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/MediaSink.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/MediaSource.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/MediaSource.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/MediaSource.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/MediaSource.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/MultiMediaSourceMuxer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/MultiMediaSourceMuxer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/MultiMediaSourceMuxer.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/MultiMediaSourceMuxer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/Parser.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/Parser.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/Parser.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/Parser.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/Stamp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/Stamp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/Stamp.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/Stamp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/config.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/config.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/config.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/config.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/macros.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/macros.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/macros.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/macros.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Common/strCoding.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/strCoding.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Common/strCoding.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Common/strCoding.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Extension/Factory.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Extension/Factory.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Extension/Factory.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Extension/Factory.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Extension/Frame.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Extension/Frame.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Extension/Frame.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Extension/Frame.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Http/HttpRequestSplitter.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Http/HttpRequestSplitter.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Http/HttpRequestSplitter.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Http/HttpRequestSplitter.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Player/MediaPlayer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Player/MediaPlayer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Player/MediaPlayer.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Player/MediaPlayer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Player/PlayerBase.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Player/PlayerBase.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Player/PlayerBase.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Player/PlayerBase.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtcp/Rtcp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtcp/Rtcp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtcp/Rtcp.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtcp/Rtcp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtcp/RtcpContext.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtcp/RtcpContext.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtcp/RtcpContext.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtcp/RtcpContext.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtcp/RtcpFCI.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtcp/RtcpFCI.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtcp/RtcpFCI.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtcp/RtcpFCI.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtpCodec.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtpCodec.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtpCodec.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtpCodec.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtpMultiCaster.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtpMultiCaster.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtpMultiCaster.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtpMultiCaster.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtpReceiver.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtpReceiver.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtpReceiver.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtpReceiver.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/Rtsp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/Rtsp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/Rtsp.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/Rtsp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtspDemuxer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspDemuxer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspDemuxer.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtspDemuxer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtspMediaSourceImp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspMediaSourceImp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspMediaSourceImp.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtspMediaSourceImp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtspMuxer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspMuxer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspMuxer.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtspMuxer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtspPlayer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspPlayer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspPlayer.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtspPlayer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtspSession.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspSession.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspSession.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtspSession.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/RtspSplitter.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspSplitter.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/RtspSplitter.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/RtspSplitter.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Rtsp/UDPServer.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/UDPServer.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Rtsp/UDPServer.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Rtsp/UDPServer.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/src",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/zlmediakit.dir/Shell/ShellSession.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Shell/ShellSession.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src/Shell/ShellSession.cpp",
+  "output": "src/CMakeFiles/zlmediakit.dir/Shell/ShellSession.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/ext-codec",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/ext-codec.dir/AAC.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/AAC.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/AAC.cpp",
+  "output": "ext-codec/CMakeFiles/ext-codec.dir/AAC.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/ext-codec",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/ext-codec.dir/AACRtp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/AACRtp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/AACRtp.cpp",
+  "output": "ext-codec/CMakeFiles/ext-codec.dir/AACRtp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/ext-codec",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/ext-codec.dir/H264.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H264.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H264.cpp",
+  "output": "ext-codec/CMakeFiles/ext-codec.dir/H264.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/ext-codec",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/ext-codec.dir/H264Rtp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H264Rtp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H264Rtp.cpp",
+  "output": "ext-codec/CMakeFiles/ext-codec.dir/H264Rtp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/ext-codec",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/ext-codec.dir/H265.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H265.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H265.cpp",
+  "output": "ext-codec/CMakeFiles/ext-codec.dir/H265.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/ext-codec",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/ext-codec.dir/H265Rtp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H265Rtp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/H265Rtp.cpp",
+  "output": "ext-codec/CMakeFiles/ext-codec.dir/H265Rtp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/ext-codec",
+  "command": "/usr/bin/gcc -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -g -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/ext-codec.dir/SPSParser.c.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/SPSParser.c",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/SPSParser.c",
+  "output": "ext-codec/CMakeFiles/ext-codec.dir/SPSParser.c.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -Dmk_api_EXPORTS -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -g -std=gnu++11 -fPIC -Os -o CMakeFiles/mk_api.dir/source/mk_common.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_common.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_common.cpp",
+  "output": "api/CMakeFiles/mk_api.dir/source/mk_common.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -Dmk_api_EXPORTS -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -g -std=gnu++11 -fPIC -Os -o CMakeFiles/mk_api.dir/source/mk_frame.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_frame.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_frame.cpp",
+  "output": "api/CMakeFiles/mk_api.dir/source/mk_frame.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -Dmk_api_EXPORTS -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -g -std=gnu++11 -fPIC -Os -o CMakeFiles/mk_api.dir/source/mk_player.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_player.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_player.cpp",
+  "output": "api/CMakeFiles/mk_api.dir/source/mk_player.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -Dmk_api_EXPORTS -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -g -std=gnu++11 -fPIC -Os -o CMakeFiles/mk_api.dir/source/mk_tcp.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_tcp.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_tcp.cpp",
+  "output": "api/CMakeFiles/mk_api.dir/source/mk_tcp.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -Dmk_api_EXPORTS -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -g -std=gnu++11 -fPIC -Os -o CMakeFiles/mk_api.dir/source/mk_track.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_track.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_track.cpp",
+  "output": "api/CMakeFiles/mk_api.dir/source/mk_track.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -Dmk_api_EXPORTS -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -g -std=gnu++11 -fPIC -Os -o CMakeFiles/mk_api.dir/source/mk_transcode.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_transcode.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_transcode.cpp",
+  "output": "api/CMakeFiles/mk_api.dir/source/mk_transcode.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api",
+  "command": "/usr/bin/g++ -DENABLE_FFMPEG -DENABLE_VERSION -DHAVE_MMSG_HDR -DHAVE_RECVMMSG_API -DHAVE_SENDMMSG_API -Dmk_api_EXPORTS -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/ZLToolKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/src -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/ext-codec/.. -g -std=gnu++11 -fPIC -Os -o CMakeFiles/mk_api.dir/source/mk_util.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_util.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/source/mk_util.cpp",
+  "output": "api/CMakeFiles/mk_api.dir/source/mk_util.cpp.o"
+},
+{
+  "directory": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api/tests",
+  "command": "/usr/bin/g++  -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api -I/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include -g -std=gnu++11 -fPIC -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations -Wno-error=extra -Wno-error=missing-field-initializers -Wno-error=type-limits -g3 -o CMakeFiles/api_tester_player_example.dir/player_example.cpp.o -c /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/tests/player_example.cpp",
+  "file": "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/tests/player_example.cpp",
+  "output": "api/tests/CMakeFiles/api_tester_player_example.dir/player_example.cpp.o"
+}
+]

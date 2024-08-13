@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/api_tester_player_example.dir/player_example.cpp.o -o /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug/api_tester_player_example  -Wl,-rpath,/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug /home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug/libmk_api.so 

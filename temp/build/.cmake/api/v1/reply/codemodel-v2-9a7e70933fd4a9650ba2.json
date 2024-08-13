@@ -1,0 +1,190 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.3"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "3rdpart",
+					"jsonFile" : "directory-3rdpart-Debug-8155d260bb18c8cb5d6b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "3rdpart",
+					"targetIndexes" : 
+					[
+						2,
+						5
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "ext-codec",
+					"jsonFile" : "directory-ext-codec-Debug-e2038b6539cfb247f7e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ext-codec",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "api",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-api-Debug-11edb5a484d5f1abc140.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "api",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "api/tests",
+					"jsonFile" : "directory-api.tests-Debug-a4fc4ee589de361df588.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.3"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "api/tests",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "ZLMediaKit",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "api_tester_player_example::@dc38851f5bc20f77011f",
+					"jsonFile" : "target-api_tester_player_example-Debug-eb0d203521ab0a6a9508.json",
+					"name" : "api_tester_player_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ext-codec::@82816a8dee8dd55c2ac3",
+					"jsonFile" : "target-ext-codec-Debug-b881f71db9c0433d5203.json",
+					"name" : "ext-codec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jsoncpp::@cde62e56a1a2cf962647",
+					"jsonFile" : "target-jsoncpp-Debug-c5447dc6596ad2c895c2.json",
+					"name" : "jsoncpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "mk_api::@10fae538ba4e8521554e",
+					"jsonFile" : "target-mk_api-Debug-5f848b7daab77cc8df20.json",
+					"name" : "mk_api",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zlmediakit::@145eef247bfb46b6828c",
+					"jsonFile" : "target-zlmediakit-Debug-3a479f938618ee3969e4.json",
+					"name" : "zlmediakit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "zltoolkit::@cde62e56a1a2cf962647",
+					"jsonFile" : "target-zltoolkit-Debug-3740069c822042fdc7b0.json",
+					"name" : "zltoolkit",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build",
+		"source" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

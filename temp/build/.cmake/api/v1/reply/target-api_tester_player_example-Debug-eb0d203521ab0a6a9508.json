@@ -1,0 +1,213 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug/api_tester_player_example"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"target_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"api/tests/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 542,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 545,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++11"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=missing-field-initializers"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=type-limits"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-g3"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build/api"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/api/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "mk_api::@10fae538ba4e8521554e"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "api_test"
+	},
+	"id" : "api_tester_player_example::@dc38851f5bc20f77011f",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug/libmk_api.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "api_tester_player_example",
+	"nameOnDisk" : "api_tester_player_example",
+	"paths" : 
+	{
+		"build" : "api/tests",
+		"source" : "api/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "api/tests/player_example.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

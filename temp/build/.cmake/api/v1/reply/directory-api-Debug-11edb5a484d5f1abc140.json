@@ -1,0 +1,68 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"api/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/include",
+			"paths" : 
+			[
+				"api/include/mk_common.h",
+				"api/include/mk_frame.h",
+				"api/include/mk_player.h",
+				"api/include/mk_tcp.h",
+				"api/include/mk_track.h",
+				"api/include/mk_transcode.h",
+				"api/include/mk_util.h",
+				"build/api/mk_export.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib",
+			"paths" : 
+			[
+				"/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug/libmk_api.so"
+			],
+			"targetId" : "mk_api::@10fae538ba4e8521554e",
+			"targetIndex" : 3,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "api",
+		"source" : "api"
+	}
+}

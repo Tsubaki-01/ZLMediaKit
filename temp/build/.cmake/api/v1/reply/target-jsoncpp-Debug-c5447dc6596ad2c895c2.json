@@ -1,0 +1,277 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/release/linux/Debug/libjsoncpp.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_compile_options",
+			"add_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"3rdpart/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 542,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 545,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++11"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-deprecated-declarations"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-error=missing-field-initializers"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-error=type-limits"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-g3"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "SOCKET_DEFAULT_BUF_SIZE=262144"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/build"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/wq/Tsubaki/ZLMediaKit_clean/ZLMediaKit/3rdpart/jsoncpp/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				10,
+				12,
+				13
+			]
+		}
+	],
+	"id" : "jsoncpp::@cde62e56a1a2cf962647",
+	"name" : "jsoncpp",
+	"nameOnDisk" : "libjsoncpp.a",
+	"paths" : 
+	{
+		"build" : "3rdpart",
+		"source" : "3rdpart"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				11
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				10,
+				12,
+				13
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/allocator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/assertions.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/config.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/forwards.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/json.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/json_features.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/reader.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/value.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/version.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/include/json/writer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "3rdpart/jsoncpp/src/lib_json/json_reader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "3rdpart/jsoncpp/src/lib_json/json_tool.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "3rdpart/jsoncpp/src/lib_json/json_value.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "3rdpart/jsoncpp/src/lib_json/json_writer.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

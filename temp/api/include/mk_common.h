@@ -148,69 +148,69 @@ extern "C" {
      * @param ssl 是否为ssl类型服务器
      * @return 0:失败,非0:端口号
      */
-    API_EXPORT uint16_t API_CALL mk_http_server_start(uint16_t port, int ssl);
+     // API_EXPORT uint16_t API_CALL mk_http_server_start(uint16_t port, int ssl);
 
-    /**
-     * 创建rtsp[s]服务器
-     * @param port rtsp监听端口，推荐554，传入0则随机分配
-     * @param ssl 是否为ssl类型服务器
-     * @return 0:失败,非0:端口号
-     */
-    API_EXPORT uint16_t API_CALL mk_rtsp_server_start(uint16_t port, int ssl);
+     /**
+      * 创建rtsp[s]服务器
+      * @param port rtsp监听端口，推荐554，传入0则随机分配
+      * @param ssl 是否为ssl类型服务器
+      * @return 0:失败,非0:端口号
+      */
+      // API_EXPORT uint16_t API_CALL mk_rtsp_server_start(uint16_t port, int ssl);
 
-    /**
-     * 创建rtmp[s]服务器
-     * @param port rtmp监听端口，推荐1935，传入0则随机分配
-     * @param ssl 是否为ssl类型服务器
-     * @return 0:失败,非0:端口号
-     */
-    API_EXPORT uint16_t API_CALL mk_rtmp_server_start(uint16_t port, int ssl);
+      /**
+       * 创建rtmp[s]服务器
+       * @param port rtmp监听端口，推荐1935，传入0则随机分配
+       * @param ssl 是否为ssl类型服务器
+       * @return 0:失败,非0:端口号
+       */
+       // API_EXPORT uint16_t API_CALL mk_rtmp_server_start(uint16_t port, int ssl);
 
-    /**
-     * 创建rtp服务器
-     * @param port rtp监听端口(包括udp/tcp)
-     * @return 0:失败,非0:端口号
-     */
-    API_EXPORT uint16_t API_CALL mk_rtp_server_start(uint16_t port);
+       /**
+        * 创建rtp服务器
+        * @param port rtp监听端口(包括udp/tcp)
+        * @return 0:失败,非0:端口号
+        */
+        // API_EXPORT uint16_t API_CALL mk_rtp_server_start(uint16_t port);
 
-    /**
-     * 创建rtc服务器
-     * @param port rtc监听端口
-     * @return 0:失败,非0:端口号
-     */
-    API_EXPORT uint16_t API_CALL mk_rtc_server_start(uint16_t port);
+        /**
+         * 创建rtc服务器
+         * @param port rtc监听端口
+         * @return 0:失败,非0:端口号
+         */
+         // API_EXPORT uint16_t API_CALL mk_rtc_server_start(uint16_t port);
 
-    //获取webrtc answer sdp回调函数
-    typedef void(API_CALL* on_mk_webrtc_get_answer_sdp)(void* user_data, const char* answer, const char* err);
+         //获取webrtc answer sdp回调函数
+         // typedef void(API_CALL* on_mk_webrtc_get_answer_sdp)(void* user_data, const char* answer, const char* err);
 
-    /**
-     * webrtc交换sdp，根据offer sdp生成answer sdp
-     * @param user_data 回调用户指针
-     * @param cb 回调函数
-     * @param type webrtc插件类型，支持echo,play,push
-     * @param offer webrtc offer sdp
-     * @param url rtc url, 例如 rtc://__defaultVhost/app/stream?key1=val1&key2=val2
-     */
-    API_EXPORT void API_CALL mk_webrtc_get_answer_sdp(void* user_data, on_mk_webrtc_get_answer_sdp cb, const char* type,
-        const char* offer, const char* url);
+         /**
+          * webrtc交换sdp，根据offer sdp生成answer sdp
+          * @param user_data 回调用户指针
+          * @param cb 回调函数
+          * @param type webrtc插件类型，支持echo,play,push
+          * @param offer webrtc offer sdp
+          * @param url rtc url, 例如 rtc://__defaultVhost/app/stream?key1=val1&key2=val2
+          */
+          // API_EXPORT void API_CALL mk_webrtc_get_answer_sdp(void* user_data, on_mk_webrtc_get_answer_sdp cb, const char* type,
+          //     const char* offer, const char* url);
 
-    API_EXPORT void API_CALL mk_webrtc_get_answer_sdp2(void* user_data, on_user_data_free user_data_free, on_mk_webrtc_get_answer_sdp cb, const char* type,
-        const char* offer, const char* url);
+          // API_EXPORT void API_CALL mk_webrtc_get_answer_sdp2(void* user_data, on_user_data_free user_data_free, on_mk_webrtc_get_answer_sdp cb, const char* type,
+          //     const char* offer, const char* url);
 
-    /**
-     * 创建srt服务器
-     * @param port srt监听端口
-     * @return 0:失败,非0:端口号
-     */
-    API_EXPORT uint16_t API_CALL mk_srt_server_start(uint16_t port);
+          /**
+           * 创建srt服务器
+           * @param port srt监听端口
+           * @return 0:失败,非0:端口号
+           */
+           // API_EXPORT uint16_t API_CALL mk_srt_server_start(uint16_t port);
 
 
-    /**
-     * 创建shell服务器
-     * @param port shell监听端口
-     * @return 0:失败,非0:端口号
-     */
-    API_EXPORT uint16_t API_CALL mk_shell_server_start(uint16_t port);
+           /**
+            * 创建shell服务器
+            * @param port shell监听端口
+            * @return 0:失败,非0:端口号
+            */
+            // API_EXPORT uint16_t API_CALL mk_shell_server_start(uint16_t port);
 
 #ifdef __cplusplus
 }

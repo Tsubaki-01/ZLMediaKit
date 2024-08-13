@@ -977,71 +977,71 @@ namespace mediakit
             out->get()->pts = frame->get()->pts;*/
             // WarnL << "FFmpegSws::inputFrame·15   " << out->get()->linesize[0]
             // << "      " << out->get()->linesize[1];
-            {
-                FILE* file;
-                char filename[32];
-                int y;
+            // {
+            //     FILE* file;
+            //     char filename[32];
+            //     int y;
 
-                // 创建文件名
-                snprintf(filename, sizeof(filename), "frame%d.bmp", 1);
+            //     // 创建文件名
+            //     snprintf(filename, sizeof(filename), "frame%d.bmp", 1);
 
-                // 打开文件
-                file = fopen(filename, "wb");
-                if (!file)
-                {
-                    printf("Could not open %s\n", filename);
-                }
+            //     // 打开文件
+            //     file = fopen(filename, "wb");
+            //     if (!file)
+            //     {
+            //         printf("Could not open %s\n", filename);
+            //     }
 
-                // BMP 文件头
-                uint8_t bmpfileheader[14] = {
-                    'B', 'M',           // Magic number for file
-                    0, 0, 0, 0,         // Size of the file (will set later)
-                    0, 0,               // Reserved
-                    0, 0,               // Reserved
-                    54, 0, 0, 0         // Start of pixel array (54 bytes)
-                };
+            //     // BMP 文件头
+            //     uint8_t bmpfileheader[14] = {
+            //         'B', 'M',           // Magic number for file
+            //         0, 0, 0, 0,         // Size of the file (will set later)
+            //         0, 0,               // Reserved
+            //         0, 0,               // Reserved
+            //         54, 0, 0, 0         // Start of pixel array (54 bytes)
+            //     };
 
-                // DIB 文件头（BITMAPINFOHEADER）
-                uint8_t bmpinfoheader[40] = {
-                    40, 0, 0, 0,        // Header size
-                    0, 0, 0, 0,         // Image width (will set later)
-                    0, 0, 0, 0,         // Image height (will set later)
-                    1, 0,               // Number of color planes
-                    24, 0,              // Bits per pixel (24 for BGR)
-                    0, 0, 0, 0,         // Compression (no compression)
-                    0, 0, 0, 0,         // Image size (can be zero for no compression)
-                    19, 11, 0, 0,       // Horizontal resolution (pixels per meter)
-                    19, 11, 0, 0,       // Vertical resolution (pixels per meter)
-                    0, 0, 0, 0          // Number of colors in palette
-                };
+            //     // DIB 文件头（BITMAPINFOHEADER）
+            //     uint8_t bmpinfoheader[40] = {
+            //         40, 0, 0, 0,        // Header size
+            //         0, 0, 0, 0,         // Image width (will set later)
+            //         0, 0, 0, 0,         // Image height (will set later)
+            //         1, 0,               // Number of color planes
+            //         24, 0,              // Bits per pixel (24 for BGR)
+            //         0, 0, 0, 0,         // Compression (no compression)
+            //         0, 0, 0, 0,         // Image size (can be zero for no compression)
+            //         19, 11, 0, 0,       // Horizontal resolution (pixels per meter)
+            //         19, 11, 0, 0,       // Vertical resolution (pixels per meter)
+            //         0, 0, 0, 0          // Number of colors in palette
+            //     };
 
-                int filesize = target_width * target_height * 3 + sizeof(bmpfileheader) + sizeof(bmpinfoheader);
+            //     int filesize = target_width * target_height * 3 + sizeof(bmpfileheader) + sizeof(bmpinfoheader);
 
-                bmpfileheader[2] = filesize;
-                bmpfileheader[3] = filesize >> 8;
-                bmpfileheader[4] = filesize >> 16;
-                bmpfileheader[5] = filesize >> 24;
+            //     bmpfileheader[2] = filesize;
+            //     bmpfileheader[3] = filesize >> 8;
+            //     bmpfileheader[4] = filesize >> 16;
+            //     bmpfileheader[5] = filesize >> 24;
 
-                bmpinfoheader[4] = target_width;
-                bmpinfoheader[5] = target_width >> 8;
-                bmpinfoheader[6] = target_width >> 16;
-                bmpinfoheader[7] = target_width >> 24;
+            //     bmpinfoheader[4] = target_width;
+            //     bmpinfoheader[5] = target_width >> 8;
+            //     bmpinfoheader[6] = target_width >> 16;
+            //     bmpinfoheader[7] = target_width >> 24;
 
-                bmpinfoheader[8] = target_height;
-                bmpinfoheader[9] = target_height >> 8;
-                bmpinfoheader[10] = target_height >> 16;
-                bmpinfoheader[11] = target_height >> 24;
+            //     bmpinfoheader[8] = target_height;
+            //     bmpinfoheader[9] = target_height >> 8;
+            //     bmpinfoheader[10] = target_height >> 16;
+            //     bmpinfoheader[11] = target_height >> 24;
 
-                fwrite(bmpfileheader, 1, sizeof(bmpfileheader), file);
-                fwrite(bmpinfoheader, 1, sizeof(bmpinfoheader), file);
+            //     fwrite(bmpfileheader, 1, sizeof(bmpfileheader), file);
+            //     fwrite(bmpinfoheader, 1, sizeof(bmpinfoheader), file);
 
-                for (y = target_height - 1; y >= 0; y--)
-                {
-                    fwrite(out->get()->data[0] + y * out->get()->linesize[0], 3, target_width, file);
-                }
+            //     for (y = target_height - 1; y >= 0; y--)
+            //     {
+            //         fwrite(out->get()->data[0] + y * out->get()->linesize[0], 3, target_width, file);
+            //     }
 
-                fclose(file);
-            }
+            //     fclose(file);
+            // }
 
 
             return out;
