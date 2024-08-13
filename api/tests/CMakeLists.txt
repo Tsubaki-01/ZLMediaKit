@@ -26,12 +26,6 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} TEST_SRC_LIST)
 foreach(TEST_SRC ${TEST_SRC_LIST})
   get_filename_component(TEST_EXE_NAME ${TEST_SRC} NAME_WE)
 
-  if(NOT ENABLE_FFMPEG)
-    # 过滤掉依赖 FFmpeg 的测试模块
-    if("${TEST_EXE_NAME}" MATCHES "player_opencv")
-      continue()
-    endif()
-  endif()
 
   message(STATUS "add c api tester: ${TEST_EXE_NAME}")
   set(exe_name api_tester_${TEST_EXE_NAME})

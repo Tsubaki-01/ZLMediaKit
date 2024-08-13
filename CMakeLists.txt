@@ -38,23 +38,23 @@ option(ENABLE_API_STATIC_LIB "Enable mk_api static lib" OFF)
 option(ENABLE_ASAN "Enable Address Sanitize" OFF)
 option(ENABLE_CXX_API "Enable C++ API SDK" OFF)
 option(ENABLE_FAAC "Enable FAAC" OFF)
-option(ENABLE_FFMPEG "Enable FFmpeg" OFF)
-option(ENABLE_HLS "Enable HLS" ON)
+option(ENABLE_FFMPEG "Enable FFmpeg" ON)
+option(ENABLE_HLS "Enable HLS" OFF)
 option(ENABLE_JEMALLOC_STATIC "Enable static linking to the jemalloc library" OFF)
 option(ENABLE_JEMALLOC_DUMP "Enable jemalloc to dump malloc statistics" OFF)
 option(ENABLE_MEM_DEBUG "Enable Memory Debug" OFF)
-option(ENABLE_MP4 "Enable MP4" ON)
-option(ENABLE_MSVC_MT "Enable MSVC Mt/Mtd lib" ON)
+option(ENABLE_MP4 "Enable MP4" OFF)
+option(ENABLE_MSVC_MT "Enable MSVC Mt/Mtd lib" OFF)
 option(ENABLE_MYSQL "Enable MySQL" OFF)
-option(ENABLE_OPENSSL "Enable OpenSSL" ON)
+option(ENABLE_OPENSSL "Enable OpenSSL" OFF)
 option(ENABLE_PLAYER "Enable Player" ON)
-option(ENABLE_RTPPROXY "Enable RTPPROXY" ON)
-option(ENABLE_SERVER "Enable Server" ON)
+option(ENABLE_RTPPROXY "Enable RTPPROXY" OFF)
+option(ENABLE_SERVER "Enable Server" OFF)
 option(ENABLE_SERVER_LIB "Enable server as android static library" OFF)
-option(ENABLE_SRT "Enable SRT" ON)
-option(ENABLE_TESTS "Enable Tests" ON)
-option(ENABLE_SCTP "Enable SCTP" ON)
-option(ENABLE_WEBRTC "Enable WebRTC" ON)
+option(ENABLE_SRT "Enable SRT" OFF)
+option(ENABLE_TESTS "Enable Tests" OFF)
+option(ENABLE_SCTP "Enable SCTP" OFF)
+option(ENABLE_WEBRTC "Enable WebRTC" OFF)
 option(ENABLE_X264 "Enable x264" OFF)
 option(ENABLE_WEPOLL "Enable wepoll" ON)
 option(ENABLE_VIDEOSTACK "Enable video stack" OFF)
@@ -258,6 +258,16 @@ if(ENABLE_FFMPEG)
     endif()
   endif()
 
+  # 查找 ffmpeg/libavformat 是否安装
+  # find ffmpeg/libavformat installed
+  # if(PKG_CONFIG_FOUND)
+  #   pkg_check_modules(FORMAT QUIET IMPORTED_TARGET libavformat)
+  #   if(FORMAT_FOUND)
+  #     update_cached_list(MK_LINK_LIBRARIES PkgConfig::FORMAT)
+  #     message(STATUS "found library: ${FORMAT_LIBRARIES}")
+  #   endif()
+  # endif()
+
   # 查找 ffmpeg/libavcodec 是否安装
   # find ffmpeg/libavcodec installed
   if(PKG_CONFIG_FOUND)
@@ -270,13 +280,25 @@ if(ENABLE_FFMPEG)
 
   # 查找 ffmpeg/libswscale 是否安装
   # find ffmpeg/libswscale installed
+  # if(PKG_CONFIG_FOUND)
+  #   pkg_check_modules(SWSCALE QUIET IMPORTED_TARGET libswscale)
+  #   if(SWSCALE_FOUND)
+  #     update_cached_list(MK_LINK_LIBRARIES PkgConfig::SWSCALE)
+  #     message(STATUS "found library: ${SWSCALE_LIBRARIES}")
+  #   endif()
+  # endif()
+
+  # 查找 ffmpeg/libswscale 是否安装
   if(PKG_CONFIG_FOUND)
     pkg_check_modules(SWSCALE QUIET IMPORTED_TARGET libswscale)
     if(SWSCALE_FOUND)
       update_cached_list(MK_LINK_LIBRARIES PkgConfig::SWSCALE)
-      message(STATUS "found library: ${SWSCALE_LIBRARIES}")
+      message(STATUS "found library using pkg_check_modules: ${SWSCALE_LIBRARIES}")
+    else()
+      message(WARNING "SWSCALE not found using pkg_check_modules")
     endif()
   endif()
+  
 
   # 查找 ffmpeg/libswresample 是否安装
   # find ffmpeg/libswresample installed
@@ -312,12 +334,24 @@ if(ENABLE_FFMPEG)
 
   # 查找 ffmpeg/libswscale 是否安装
   # find ffmpeg/libswscale installed
+  # if(NOT SWSCALE_FOUND)
+  #   find_package(SWSCALE QUIET)
+  #   if(SWSCALE_FOUND)
+  #     include_directories(SYSTEM ${SWSCALE_INCLUDE_DIR})
+  #     update_cached_list(MK_LINK_LIBRARIES ${SWSCALE_LIBRARIES})
+  #     message(STATUS "found library: ${SWSCALE_LIBRARIES}")
+  #   endif()
+  # endif()
+
+  # 查找 ffmpeg/libswscale 是否安装
   if(NOT SWSCALE_FOUND)
     find_package(SWSCALE QUIET)
     if(SWSCALE_FOUND)
       include_directories(SYSTEM ${SWSCALE_INCLUDE_DIR})
       update_cached_list(MK_LINK_LIBRARIES ${SWSCALE_LIBRARIES})
-      message(STATUS "found library: ${SWSCALE_LIBRARIES}")
+      message(STATUS "found library using find_package: ${SWSCALE_LIBRARIES}")
+    else()
+      message(WARNING "SWSCALE not found using find_package")
     endif()
   endif()
 
@@ -535,17 +569,9 @@ if(IOS)
   return()
 endif()
 
-#cpp测试demo程序
-#cpp test demo program
-if (ENABLE_TESTS)
-  add_subdirectory(tests)
-endif ()
 
-# 拷贝www文件夹、配置文件、默认证书
-# Copy www folder, configuration file, default certificate
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/www" DESTINATION ${EXECUTABLE_OUTPUT_PATH})
+
 file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/conf/config.ini" DESTINATION ${EXECUTABLE_OUTPUT_PATH})
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/default.pem" DESTINATION ${EXECUTABLE_OUTPUT_PATH})
 
 # 拷贝VideoStack 无视频流时默认填充的背景图片
 # Copy the default background image used by VideoStack when there is no video stream

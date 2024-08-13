@@ -20,7 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-
 include(GenerateExportHeader)
 file(GLOB API_SRC_LIST
   include/*.h
@@ -34,7 +33,7 @@ set(COMPILE_DEFINITIONS ${MK_COMPILE_DEFINITIONS})
 
 if (MSVC)
   list(APPEND COMPILE_DEFINITIONS GENERATE_EXPORT)
-endif ()
+endif()
 
 if(ENABLE_API_STATIC_LIB)
   add_library(mk_api STATIC ${API_SRC_LIST})
@@ -45,8 +44,15 @@ else()
   add_library(mk_api SHARED ${API_SRC_LIST})
 endif()
 
-target_compile_definitions(mk_api
-  PRIVATE ${COMPILE_DEFINITIONS})
+# 设置编译选项，优化大小
+target_compile_options(mk_api PRIVATE -Os)
+
+# 移除-g选项，避免生成调试信息
+string(REPLACE "-g" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+string(REPLACE "-g" "" CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+
+
+target_compile_definitions(mk_api PRIVATE ${COMPILE_DEFINITIONS})
 target_include_directories(mk_api
   PRIVATE
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"
@@ -55,12 +61,13 @@ target_include_directories(mk_api
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>")
 
+# 使用关键字形式统一 target_link_libraries 调用
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-  target_link_libraries(mk_api -Wl,--start-group ${LINK_LIBRARIES} -Wl,--end-group)
+  target_link_libraries(mk_api PRIVATE -Wl,--start-group ${LINK_LIBRARIES} -Wl,--end-group)
 elseif(CMAKE_SYSTEM_NAME MATCHES "Android")
-  target_link_libraries(mk_api log -Wl,--start-group ${LINK_LIBRARIES} -Wl,--end-group)
+  target_link_libraries(mk_api PRIVATE log -Wl,--start-group ${LINK_LIBRARIES} -Wl,--end-group)
 else()
-  target_link_libraries(mk_api ${LINK_LIBRARIES})
+  target_link_libraries(mk_api PRIVATE ${LINK_LIBRARIES})
 endif()
 
 generate_export_header(mk_api
@@ -85,3 +92,12 @@ endif()
 if (ENABLE_TESTS)
   add_subdirectory(tests)
 endif()
+
+# strip裁剪符号及调试信息
+if(NOT ENABLE_API_STATIC_LIB AND NOT MSVC)
+  add_custom_command(TARGET mk_api POST_BUILD
+    COMMAND ${CMAKE_STRIP} --strip-unneeded $<TARGET_FILE:mk_api>
+    COMMENT "Stripping symbols to reduce size"
+  )
+endif()
+

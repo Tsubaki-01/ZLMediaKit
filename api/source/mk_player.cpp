@@ -16,37 +16,47 @@ using namespace std;
 using namespace toolkit;
 using namespace mediakit;
 
-class MediaPlayerForC : public std::enable_shared_from_this<MediaPlayerForC>{
+class MediaPlayerForC : public std::enable_shared_from_this<MediaPlayerForC>
+{
 public:
     using Ptr = std::shared_ptr<MediaPlayerForC>;
 
-    MediaPlayerForC(){
+    MediaPlayerForC()
+    {
         _player = std::make_shared<MediaPlayer>();
     }
 
-    MediaPlayer *operator->(){
+    MediaPlayer* operator->()
+    {
         return _player.get();
     }
 
-    void setup(){
+    void setup()
+    {
         weak_ptr<MediaPlayerForC> weak_self = shared_from_this();
-        _player->setOnPlayResult([weak_self](const SockException &ex){
-            auto strong_self = weak_self.lock();
-            if(strong_self){
-                strong_self->onEvent(false,ex);
-            }
-        });
+        _player->setOnPlayResult([weak_self] (const SockException& ex)
+            {
+                auto strong_self = weak_self.lock();
+                if (strong_self)
+                {
+                    strong_self->onEvent(false, ex);
+                }
+            });
 
-        _player->setOnShutdown([weak_self](const SockException &ex){
-            auto strong_self = weak_self.lock();
-            if(strong_self){
-                strong_self->onEvent(true,ex);
-            }
-        });
+        _player->setOnShutdown([weak_self] (const SockException& ex)
+            {
+                auto strong_self = weak_self.lock();
+                if (strong_self)                
+{
+                    strong_self->onEvent(true, ex);
+                }
+            });
     }
 
-    void unset() {
-        for (auto &track : _player->getTracks(false)) {
+    void unset()
+    {
+        for (auto& track : _player->getTracks(false))
+        {
             track->clear();
         }
         lock_guard<recursive_mutex> lck(_mtx);
@@ -54,40 +64,50 @@ public:
         _on_shutdown = nullptr;
     }
 
-    void onEvent(bool is_shutdown, const SockException &ex){
+    void onEvent(bool is_shutdown, const SockException& ex)
+    {
         lock_guard<recursive_mutex> lck(_mtx);
-        if (is_shutdown) {
+        if (is_shutdown)
+        {
             //播放中断
-            if (_on_shutdown) {
+            if (_on_shutdown)
+            {
                 _on_shutdown(_on_shutdown_data.get(), ex.getErrCode(), ex.what(), nullptr, 0);
             }
             return;
         }
 
         //播放结果
-        if (_on_play) {
+        if (_on_play)
+        {
             auto cpp_tracks = _player->getTracks(false);
-            mk_track tracks[TrackMax] = {nullptr};
+            mk_track tracks[TrackMax] = { nullptr };
             int track_count = 0;
-            for (auto &track : cpp_tracks) {
+            for (auto& track : cpp_tracks)
+            {
                 tracks[track_count++] = (mk_track) &track;
             }
             _on_play(_on_play_data.get(), ex.getErrCode(), ex.what(), tracks, track_count);
         }
     }
 
-    void setOnEvent(on_mk_play_event cb, std::shared_ptr<void> user_data, int type) {
+    void setOnEvent(on_mk_play_event cb, std::shared_ptr<void> user_data, int type)
+    {
         lock_guard<recursive_mutex> lck(_mtx);
-        if (type == 0) {
+        if (type == 0)
+        {
             _on_play_data = std::move(user_data);
             _on_play = cb;
-        } else {
+        }
+        else
+        {
             _on_shutdown_data = std::move(user_data);
             _on_shutdown = cb;
         }
     }
 
-    MediaPlayer::Ptr& getPlayer(){
+    MediaPlayer::Ptr& getPlayer()
+    {
         return _player;
     }
 private:
@@ -100,123 +120,146 @@ private:
     std::shared_ptr<void> _on_shutdown_data;
 };
 
-API_EXPORT mk_player API_CALL mk_player_create() {
-    MediaPlayerForC::Ptr *obj = new MediaPlayerForC::Ptr(new MediaPlayerForC());
+API_EXPORT mk_player API_CALL mk_player_create()
+{
+    MediaPlayerForC::Ptr* obj = new MediaPlayerForC::Ptr(new MediaPlayerForC());
     (*obj)->setup();
-    return (mk_player)obj;
+    return (mk_player) obj;
 }
-API_EXPORT void API_CALL mk_player_release(mk_player ctx) {
+API_EXPORT void API_CALL mk_player_release(mk_player ctx)
+{
     assert(ctx);
-    MediaPlayerForC::Ptr *obj = (MediaPlayerForC::Ptr *)ctx;
+    MediaPlayerForC::Ptr* obj = (MediaPlayerForC::Ptr*) ctx;
     (*obj)->unset();
     delete obj;
 }
 
-API_EXPORT void API_CALL mk_player_set_option(mk_player ctx,const char* key,const char *val){
+API_EXPORT void API_CALL mk_player_set_option(mk_player ctx, const char* key, const char* val)
+{
     assert(ctx && key && val);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     auto player = obj.getPlayer();
     string key_str(key), val_str(val);
-    player->getPoller()->async([key_str,val_str,player](){
-        //切换线程后再操作
-        (*player)[key_str] = val_str;
-    });
+    player->getPoller()->async([key_str, val_str, player] ()        
+{
+            //切换线程后再操作
+            (*player)[key_str] = val_str;
+        });
 }
-API_EXPORT void API_CALL mk_player_play(mk_player ctx, const char *url) {
+API_EXPORT void API_CALL mk_player_play(mk_player ctx, const char* url)
+{
     assert(ctx && url);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     auto player = obj.getPlayer();
     string url_str(url);
-    player->getPoller()->async([url_str,player](){
-        //切换线程后再操作
-        player->play(url_str);
-    });
+    player->getPoller()->async([url_str, player] ()
+        {
+            //切换线程后再操作
+            player->play(url_str);
+        });
 }
 
-API_EXPORT void API_CALL mk_player_pause(mk_player ctx, int pause) {
+API_EXPORT void API_CALL mk_player_pause(mk_player ctx, int pause)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     auto player = obj.getPlayer();
-    player->getPoller()->async([pause,player](){
-        //切换线程后再操作
-        player->pause(pause);
-    });
+    player->getPoller()->async([pause, player] ()
+        {
+            //切换线程后再操作
+            player->pause(pause);
+        });
 }
 
-API_EXPORT void API_CALL mk_player_speed(mk_player ctx, float speed) {
+API_EXPORT void API_CALL mk_player_speed(mk_player ctx, float speed)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *) ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     auto player = obj.getPlayer();
-    player->getPoller()->async([speed, player]() {
-        //切换线程后再操作
-        player->speed(speed);
-    });
+    player->getPoller()->async([speed, player] ()
+        {
+            //切换线程后再操作
+            player->speed(speed);
+        });
 }
 
-API_EXPORT void API_CALL mk_player_seekto(mk_player ctx, float progress) {
+API_EXPORT void API_CALL mk_player_seekto(mk_player ctx, float progress)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     auto player = obj.getPlayer();
-    player->getPoller()->async([progress,player](){
-        //切换线程后再操作
-        player->seekTo(progress);
-    });
+    player->getPoller()->async([progress, player] ()
+        {
+            //切换线程后再操作
+            player->seekTo(progress);
+        });
 }
 
-API_EXPORT void API_CALL mk_player_seekto_pos(mk_player ctx, int seek_pos) {
+API_EXPORT void API_CALL mk_player_seekto_pos(mk_player ctx, int seek_pos)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *) ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     auto player = obj.getPlayer();
-    player->getPoller()->async([seek_pos, player]() {
-        //切换线程后再操作
-        player->seekTo((uint32_t) seek_pos);
-    });
+    player->getPoller()->async([seek_pos, player] ()
+        {
+            //切换线程后再操作
+            player->seekTo((uint32_t) seek_pos);
+        });
 }
 
-static void mk_player_set_on_event(mk_player ctx, on_mk_play_event cb, std::shared_ptr<void> user_data, int type) {
+static void mk_player_set_on_event(mk_player ctx, on_mk_play_event cb, std::shared_ptr<void> user_data, int type)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     obj.setOnEvent(cb, std::move(user_data), type);
 }
 
-API_EXPORT void API_CALL mk_player_set_on_result(mk_player ctx, on_mk_play_event cb, void *user_data) {
+API_EXPORT void API_CALL mk_player_set_on_result(mk_player ctx, on_mk_play_event cb, void* user_data)
+{
     mk_player_set_on_result2(ctx, cb, user_data, nullptr);
 }
 
-API_EXPORT void API_CALL mk_player_set_on_result2(mk_player ctx, on_mk_play_event cb, void *user_data, on_user_data_free user_data_free) {
-    std::shared_ptr<void> ptr(user_data, user_data_free ? user_data_free : [](void *) {});
+API_EXPORT void API_CALL mk_player_set_on_result2(mk_player ctx, on_mk_play_event cb, void* user_data, on_user_data_free user_data_free)
+{
+    std::shared_ptr<void> ptr(user_data, user_data_free ? user_data_free : [] (void*) { });
     mk_player_set_on_event(ctx, cb, std::move(ptr), 0);
 }
 
-API_EXPORT void API_CALL mk_player_set_on_shutdown(mk_player ctx, on_mk_play_event cb, void *user_data) {
+API_EXPORT void API_CALL mk_player_set_on_shutdown(mk_player ctx, on_mk_play_event cb, void* user_data)
+{
     mk_player_set_on_shutdown2(ctx, cb, user_data, nullptr);
 }
 
-API_EXPORT void API_CALL mk_player_set_on_shutdown2(mk_player ctx, on_mk_play_event cb, void *user_data, on_user_data_free user_data_free){
-    std::shared_ptr<void> ptr(user_data, user_data_free ? user_data_free : [](void *) {});
+API_EXPORT void API_CALL mk_player_set_on_shutdown2(mk_player ctx, on_mk_play_event cb, void* user_data, on_user_data_free user_data_free)
+{
+    std::shared_ptr<void> ptr(user_data, user_data_free ? user_data_free : [] (void*) { });
     mk_player_set_on_event(ctx, cb, std::move(ptr), 1);
 }
 
-API_EXPORT float API_CALL mk_player_duration(mk_player ctx) {
+API_EXPORT float API_CALL mk_player_duration(mk_player ctx)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     return obj->getDuration();
 }
 
-API_EXPORT float API_CALL mk_player_progress(mk_player ctx) {
+API_EXPORT float API_CALL mk_player_progress(mk_player ctx)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     return obj->getProgress();
 }
 
-API_EXPORT int API_CALL mk_player_progress_pos(mk_player ctx) {
+API_EXPORT int API_CALL mk_player_progress_pos(mk_player ctx)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *) ctx);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
     return obj->getProgressPos();
 }
 
-API_EXPORT float API_CALL mk_player_loss_rate(mk_player ctx, int track_type) {
+API_EXPORT float API_CALL mk_player_loss_rate(mk_player ctx, int track_type)
+{
     assert(ctx);
-    MediaPlayerForC &obj = **((MediaPlayerForC::Ptr *)ctx);
-    return obj->getPacketLossRate((TrackType)track_type);
+    MediaPlayerForC& obj = **((MediaPlayerForC::Ptr*) ctx);
+    return obj->getPacketLossRate((TrackType) track_type);
 }
