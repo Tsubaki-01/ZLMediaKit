@@ -31,9 +31,9 @@ set(LINK_LIBRARIES ${MK_LINK_LIBRARIES})
 
 set(COMPILE_DEFINITIONS ${MK_COMPILE_DEFINITIONS})
 
-if (MSVC)
-  list(APPEND COMPILE_DEFINITIONS GENERATE_EXPORT)
-endif()
+# if (MSVC)
+#   list(APPEND COMPILE_DEFINITIONS GENERATE_EXPORT)
+# endif()
 
 if(ENABLE_API_STATIC_LIB)
   add_library(mk_api STATIC ${API_SRC_LIST})
@@ -85,19 +85,19 @@ install(TARGETS mk_api
   RUNTIME DESTINATION ${INSTALL_PATH_RUNTIME})
 
 # IOS 跳过测试代码
-if(IOS)
-  return()
-endif()
+# if(IOS)
+#   return()
+# endif()
 
-if (ENABLE_TESTS)
+# if (ENABLE_TESTS)
   add_subdirectory(tests)
-endif()
+# endif()
 
 # strip裁剪符号及调试信息
-if(NOT ENABLE_API_STATIC_LIB AND NOT MSVC)
-  add_custom_command(TARGET mk_api POST_BUILD
-    COMMAND ${CMAKE_STRIP} --strip-unneeded $<TARGET_FILE:mk_api>
-    COMMENT "Stripping symbols to reduce size"
-  )
-endif()
+# if(NOT ENABLE_API_STATIC_LIB AND NOT MSVC)
+#   add_custom_command(TARGET mk_api POST_BUILD
+#     COMMAND ${CMAKE_STRIP} --strip-unneeded $<TARGET_FILE:mk_api>
+#     COMMENT "Stripping symbols to reduce size"
+#   )
+# endif()
 

@@ -56,7 +56,7 @@ option(ENABLE_TESTS "Enable Tests" OFF)
 option(ENABLE_SCTP "Enable SCTP" OFF)
 option(ENABLE_WEBRTC "Enable WebRTC" OFF)
 option(ENABLE_X264 "Enable x264" OFF)
-option(ENABLE_WEPOLL "Enable wepoll" ON)
+option(ENABLE_WEPOLL "Enable wepoll" OFF)
 option(ENABLE_VIDEOSTACK "Enable video stack" OFF)
 option(DISABLE_REPORT "Disable report to report.zlmediakit.com" OFF)
 option(USE_SOLUTION_FOLDERS "Enable solution dir supported" ON)
@@ -77,7 +77,7 @@ message(STATUS "编译类型: ${CMAKE_BUILD_TYPE}")
 set(CMAKE_VERBOSE_MAKEFILE ON CACHE INTERNAL "" FORCE)
 
 # TODO: include 当前目录会导致 server 编译出错, 待排除
-set(CMAKE_INCLUDE_CURRENT_DIR OFF)
+# set(CMAKE_INCLUDE_CURRENT_DIR OFF)
 
 # 安装路径
 # Install path
@@ -224,25 +224,25 @@ endif()
 update_cached(MK_LINK_LIBRARIES "")
 update_cached(MK_COMPILE_DEFINITIONS ENABLE_VERSION)
 
-if (DISABLE_REPORT)
-  update_cached_list(MK_COMPILE_DEFINITIONS DISABLE_REPORT)
-endif ()
+# if (DISABLE_REPORT)
+#   update_cached_list(MK_COMPILE_DEFINITIONS DISABLE_REPORT)
+# endif ()
 
-if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-  include(CheckCXXSourceCompiles)
-  file(READ ${CMAKE_CURRENT_SOURCE_DIR}/cmake/checks/atomic_check.cpp atomic_check_cpp)
-  check_cxx_source_compiles("${atomic_check_cpp}" HAVE_CXX_ATOMICS_WITHOUT_LIB)
-  if(NOT HAVE_CXX_ATOMICS_WITHOUT_LIB)
-    # cmake --help-policy CMP0075
-    list(APPEND CMAKE_REQUIRED_LIBRARIES "atomic")
-    check_cxx_source_compiles("${atomic_check_cpp}" HAVE_CXX_ATOMICS_WITH_LIB)
-    if(NOT HAVE_CXX_ATOMICS_WITH_LIB)
-      message(WARNING "Compiler doesn't support std::atomic<long long>")
-    else()
-      update_cached_list(MK_LINK_LIBRARIES atomic)
-    endif()
-  endif()
-endif()
+# if(CMAKE_SYSTEM_NAME MATCHES "Linux")
+#   include(CheckCXXSourceCompiles)
+#   file(READ ${CMAKE_CURRENT_SOURCE_DIR}/cmake/checks/atomic_check.cpp atomic_check_cpp)
+#   check_cxx_source_compiles("${atomic_check_cpp}" HAVE_CXX_ATOMICS_WITHOUT_LIB)
+#   if(NOT HAVE_CXX_ATOMICS_WITHOUT_LIB)
+#     # cmake --help-policy CMP0075
+#     list(APPEND CMAKE_REQUIRED_LIBRARIES "atomic")
+#     check_cxx_source_compiles("${atomic_check_cpp}" HAVE_CXX_ATOMICS_WITH_LIB)
+#     if(NOT HAVE_CXX_ATOMICS_WITH_LIB)
+#       message(WARNING "Compiler doesn't support std::atomic<long long>")
+#     else()
+#       update_cached_list(MK_LINK_LIBRARIES atomic)
+#     endif()
+#   endif()
+# endif()
 
 
 
