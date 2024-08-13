@@ -47,7 +47,7 @@ option(ENABLE_MP4 "Enable MP4" OFF)
 option(ENABLE_MSVC_MT "Enable MSVC Mt/Mtd lib" OFF)
 option(ENABLE_MYSQL "Enable MySQL" OFF)
 option(ENABLE_OPENSSL "Enable OpenSSL" OFF)
-option(ENABLE_PLAYER "Enable Player" ON)
+option(ENABLE_PLAYER "Enable Player" OFF)
 option(ENABLE_RTPPROXY "Enable RTPPROXY" OFF)
 option(ENABLE_SERVER "Enable Server" OFF)
 option(ENABLE_SERVER_LIB "Enable server as android static library" OFF)
@@ -244,6 +244,15 @@ if(CMAKE_SYSTEM_NAME MATCHES "Linux")
   endif()
 endif()
 
+
+
+
+
+
+
+
+
+
 # 多个模块依赖 ffmpeg 相关库, 统一查找
 # Multiple modules depend on ffmpeg related libraries, unified search
 if(ENABLE_FFMPEG)
@@ -375,22 +384,30 @@ if(ENABLE_FFMPEG)
   endif()
 endif()
 
-if(ENABLE_MEM_DEBUG)
-  update_cached_list(MK_LINK_LIBRARIES
-    "-Wl,-wrap,free;-Wl,-wrap,malloc;-Wl,-wrap,realloc;-Wl,-wrap,calloc")
-  update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_MEM_DEBUG)
-  message(STATUS "Memory debugging enabled")
-endif()
 
-if(ENABLE_ASAN)
-  list(APPEND COMPILE_OPTIONS_DEFAULT
-    "-fsanitize=address;-fno-omit-frame-pointer")
-  # https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer
-  # > In order to use AddressSanitizer you will need to
-  # > compile and link your program using clang with the -fsanitize=address switch.
-  update_cached_list(MK_LINK_LIBRARIES "-fsanitize=address")
-  message(STATUS "Address Sanitize enabled")
-endif()
+
+
+
+
+
+
+
+# if(ENABLE_MEM_DEBUG)
+#   update_cached_list(MK_LINK_LIBRARIES
+#     "-Wl,-wrap,free;-Wl,-wrap,malloc;-Wl,-wrap,realloc;-Wl,-wrap,calloc")
+#   update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_MEM_DEBUG)
+#   message(STATUS "Memory debugging enabled")
+# endif()
+
+# if(ENABLE_ASAN)
+#   list(APPEND COMPILE_OPTIONS_DEFAULT
+#     "-fsanitize=address;-fno-omit-frame-pointer")
+#   # https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer
+#   # > In order to use AddressSanitizer you will need to
+#   # > compile and link your program using clang with the -fsanitize=address switch.
+#   update_cached_list(MK_LINK_LIBRARIES "-fsanitize=address")
+#   message(STATUS "Address Sanitize enabled")
+# endif()
 
 # 下载jemalloc后静态编译
 # Static compilation after downloading jemalloc
@@ -429,73 +446,73 @@ endif()
 
 # 查找 openssl 是否安装
 # find openssl installed
-find_package(OpenSSL QUIET)
-if(OPENSSL_FOUND AND ENABLE_OPENSSL)
-  message(STATUS "found library: ${OPENSSL_LIBRARIES}, ENABLE_OPENSSL defined")
-  include_directories(${OPENSSL_INCLUDE_DIR})
-  update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_OPENSSL)
-  update_cached_list(MK_LINK_LIBRARIES ${OPENSSL_LIBRARIES})
-  if(CMAKE_SYSTEM_NAME MATCHES "Linux" AND OPENSSL_USE_STATIC_LIBS)
-    update_cached_list(MK_LINK_LIBRARIES ${CMAKE_DL_LIBS})
-  elseif(CMAKE_SYSTEM_NAME MATCHES "Windows" AND OPENSSL_USE_STATIC_LIBS)
-    update_cached_list(MK_LINK_LIBRARIES Crypt32)
-  endif()
-else()
-  set(ENABLE_OPENSSL OFF)
-  set(ENABLE_WEBRTC OFF)
-  message(WARNING "openssl 未找到, rtmp 将不支持 flash 播放器, https/wss/rtsps/rtmps/webrtc 也将失效")
-endif()
+# find_package(OpenSSL QUIET)
+# if(OPENSSL_FOUND AND ENABLE_OPENSSL)
+#   message(STATUS "found library: ${OPENSSL_LIBRARIES}, ENABLE_OPENSSL defined")
+#   include_directories(${OPENSSL_INCLUDE_DIR})
+#   update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_OPENSSL)
+#   update_cached_list(MK_LINK_LIBRARIES ${OPENSSL_LIBRARIES})
+#   if(CMAKE_SYSTEM_NAME MATCHES "Linux" AND OPENSSL_USE_STATIC_LIBS)
+#     update_cached_list(MK_LINK_LIBRARIES ${CMAKE_DL_LIBS})
+#   elseif(CMAKE_SYSTEM_NAME MATCHES "Windows" AND OPENSSL_USE_STATIC_LIBS)
+#     update_cached_list(MK_LINK_LIBRARIES Crypt32)
+#   endif()
+# else()
+#   set(ENABLE_OPENSSL OFF)
+#   set(ENABLE_WEBRTC OFF)
+#   message(WARNING "openssl 未找到, rtmp 将不支持 flash 播放器, https/wss/rtsps/rtmps/webrtc 也将失效")
+# endif()
 
 # 查找 mysql 是否安装
 # find mysql installed
-find_package(MYSQL QUIET)
-if(MYSQL_FOUND AND ENABLE_MYSQL)
-  message(STATUS "found library: ${MYSQL_LIBRARIES}, ENABLE_MYSQL defined")
-  include_directories(SYSTEM
-    ${MYSQL_INCLUDE_DIR}
-    ${MYSQL_INCLUDE_DIR}/mysql)
+# find_package(MYSQL QUIET)
+# if(MYSQL_FOUND AND ENABLE_MYSQL)
+#   message(STATUS "found library: ${MYSQL_LIBRARIES}, ENABLE_MYSQL defined")
+#   include_directories(SYSTEM
+#     ${MYSQL_INCLUDE_DIR}
+#     ${MYSQL_INCLUDE_DIR}/mysql)
 
-  update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_MYSQL)
-  update_cached_list(MK_LINK_LIBRARIES ${MYSQL_LIBRARIES})
-endif()
+#   update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_MYSQL)
+#   update_cached_list(MK_LINK_LIBRARIES ${MYSQL_LIBRARIES})
+# endif()
 
 # 查找 x264 是否安装
 # find x264 installed
-find_package(X264 QUIET)
-if(X264_FOUND AND ENABLE_X264)
-  message(STATUS "found library: ${X264_LIBRARIES}, ENABLE_X264 defined")
-  include_directories(SYSTEM ${X264_INCLUDE_DIRS})
+# find_package(X264 QUIET)
+# if(X264_FOUND AND ENABLE_X264)
+#   message(STATUS "found library: ${X264_LIBRARIES}, ENABLE_X264 defined")
+#   include_directories(SYSTEM ${X264_INCLUDE_DIRS})
 
-  update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_X264)
-  update_cached_list(MK_LINK_LIBRARIES ${X264_LIBRARIES})
-endif()
+#   update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_X264)
+#   update_cached_list(MK_LINK_LIBRARIES ${X264_LIBRARIES})
+# endif()
 
 # 查找 faac 是否安装
 # find faac installed
-find_package(FAAC QUIET)
-if(FAAC_FOUND AND ENABLE_FAAC)
-  message(STATUS "found library:${FAAC_LIBRARIES}, ENABLE_FAAC defined")
-  include_directories(SYSTEM ${FAAC_INCLUDE_DIR})
-  update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_FAAC)
-  update_cached_list(MK_LINK_LIBRARIES ${FAAC_LIBRARIES})
-endif()
+# find_package(FAAC QUIET)
+# if(FAAC_FOUND AND ENABLE_FAAC)
+#   message(STATUS "found library:${FAAC_LIBRARIES}, ENABLE_FAAC defined")
+#   include_directories(SYSTEM ${FAAC_INCLUDE_DIR})
+#   update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_FAAC)
+#   update_cached_list(MK_LINK_LIBRARIES ${FAAC_LIBRARIES})
+# endif()
 
-if(WIN32)
-  update_cached_list(MK_LINK_LIBRARIES WS2_32 Iphlpapi shlwapi)
-elseif(ANDROID)
-  update_cached_list(MK_LINK_LIBRARIES log)
-elseif(NOT ANDROID OR IOS)
-  update_cached_list(MK_LINK_LIBRARIES pthread)
-endif()
+# if(WIN32)
+#   update_cached_list(MK_LINK_LIBRARIES WS2_32 Iphlpapi shlwapi)
+# elseif(ANDROID)
+#   update_cached_list(MK_LINK_LIBRARIES log)
+# elseif(NOT ANDROID OR IOS)
+#   update_cached_list(MK_LINK_LIBRARIES pthread)
+# endif()
 
-if(ENABLE_VIDEOSTACK)
-  if(ENABLE_FFMPEG AND ENABLE_X264)
-    message(STATUS "ENABLE_VIDEOSTACK defined")
-    update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_VIDEOSTACK)
-  else()
-    message(WARNING "ENABLE_VIDEOSTACK requires ENABLE_FFMPEG and ENABLE_X264")
-  endif ()
-endif ()
+# if(ENABLE_VIDEOSTACK)
+#   if(ENABLE_FFMPEG AND ENABLE_X264)
+#     message(STATUS "ENABLE_VIDEOSTACK defined")
+#     update_cached_list(MK_COMPILE_DEFINITIONS ENABLE_VIDEOSTACK)
+#   else()
+#     message(WARNING "ENABLE_VIDEOSTACK requires ENABLE_FFMPEG and ENABLE_X264")
+#   endif ()
+# endif ()
 
 # ----------------------------------------------------------------------------
 # Solution folders:
@@ -505,19 +522,19 @@ if(USE_SOLUTION_FOLDERS)
   set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "CMakeTargets")
 endif()
 
-if(MSVC AND ENABLE_MSVC_MT)
-  set(CompilerFlags
-    CMAKE_CXX_FLAGS
-    CMAKE_CXX_FLAGS_DEBUG
-    CMAKE_CXX_FLAGS_RELEASE
-    CMAKE_C_FLAGS
-    CMAKE_C_FLAGS_DEBUG
-    CMAKE_C_FLAGS_RELEASE)
-  # TODO: 通常应该不需要替换
-  foreach(CompilerFlag ${CompilerFlags})
-    string(REPLACE "/MD" "/MT" ${CompilerFlag} "${${CompilerFlag}}")
-  endforeach()
-endif()
+# if(MSVC AND ENABLE_MSVC_MT)
+#   set(CompilerFlags
+#     CMAKE_CXX_FLAGS
+#     CMAKE_CXX_FLAGS_DEBUG
+#     CMAKE_CXX_FLAGS_RELEASE
+#     CMAKE_C_FLAGS
+#     CMAKE_C_FLAGS_DEBUG
+#     CMAKE_C_FLAGS_RELEASE)
+#   # TODO: 通常应该不需要替换
+#   foreach(CompilerFlag ${CompilerFlags})
+#     string(REPLACE "/MD" "/MT" ${CompilerFlag} "${${CompilerFlag}}")
+#   endforeach()
+# endif()
 
 ##############################################################################
 
@@ -533,13 +550,13 @@ add_subdirectory(src)
 
 add_subdirectory(ext-codec)
 
-if(ENABLE_SRT)
-  add_subdirectory(srt)
-endif()
+# if(ENABLE_SRT)
+#   add_subdirectory(srt)
+# endif()
 
-if(ENABLE_WEBRTC)
-  add_subdirectory(webrtc)
-endif()
+# if(ENABLE_WEBRTC)
+#   add_subdirectory(webrtc)
+# endif()
 
 if(ENABLE_API)
   add_subdirectory(api)
@@ -547,27 +564,27 @@ endif()
 
 ##############################################################################
 
-if(ENABLE_PLAYER AND ENABLE_FFMPEG)
-  add_subdirectory(player)
-endif()
+# if(ENABLE_PLAYER AND ENABLE_FFMPEG)
+#   add_subdirectory(player)
+# endif()
 
 #MediaServer主程序
 #MediaServer main program
-if(ENABLE_SERVER)
-  add_subdirectory(server)
-endif()
+# if(ENABLE_SERVER)
+#   add_subdirectory(server)
+# endif()
 
 # Android 会 add_subdirectory 并依赖该变量
 # Android will add_subdirectory and depend on this variable
-if(ENABLE_SERVER_LIB AND NOT CMAKE_PARENT_LIST_FILE STREQUAL CMAKE_CURRENT_LIST_FILE)
-  set(MK_LINK_LIBRARIES ${MK_LINK_LIBRARIES} PARENT_SCOPE)
-endif()
+# if(ENABLE_SERVER_LIB AND NOT CMAKE_PARENT_LIST_FILE STREQUAL CMAKE_CURRENT_LIST_FILE)
+#   set(MK_LINK_LIBRARIES ${MK_LINK_LIBRARIES} PARENT_SCOPE)
+# endif()
 
 # IOS 不编译可执行程序
 # IOS does not compile executable programs
-if(IOS)
-  return()
-endif()
+# if(IOS)
+#   return()
+# endif()
 
 
 
@@ -575,6 +592,6 @@ file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/conf/config.ini" DESTINATION ${EXECUTABLE
 
 # 拷贝VideoStack 无视频流时默认填充的背景图片
 # Copy the default background image used by VideoStack when there is no video stream
-if (ENABLE_VIDEOSTACK AND ENABLE_FFMPEG AND ENABLE_X264)
-  file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/conf/novideo.yuv" DESTINATION ${EXECUTABLE_OUTPUT_PATH})
-endif ()
+# if (ENABLE_VIDEOSTACK AND ENABLE_FFMPEG AND ENABLE_X264)
+#   file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/conf/novideo.yuv" DESTINATION ${EXECUTABLE_OUTPUT_PATH})
+# endif ()
