@@ -1,0 +1,269 @@
+2024-08-15 11:02:58.619 D [api_tester_player_example] [5538-stamp thread] util.cpp:380 operator() | Stamp thread started
+2024-08-15 11:02:58.620 I [api_tester_player_example] [5538-api_tester_play] EventPoller.cpp:592 EventPollerPool | EventPoller created size: 4
+2024-08-15 11:02:58.620 I [api_tester_player_example] [5538-api_tester_play] player_example.cpp:90 main | enter any key to exit
+2024-08-15 11:02:58.622 D [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:99 play | rtsp://192.168.74.128/live/123 null null 0
+2024-08-15 11:02:58.622 T [api_tester_player_example] [5538-event poller 1] TcpClient.cpp:79 startConnect | mediakit::RtspPlayerImp-1 start connect 192.168.74.128:554
+2024-08-15 11:02:58.622 T [api_tester_player_example] [5538-event poller 1] TcpClient.cpp:89 onSockConnect | mediakit::RtspPlayerImp-1 connect result: 0(success)
+2024-08-15 11:02:58.622 T [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:734 sendRtspRequest | OPTIONS rtsp://192.168.74.128/live/123
+2024-08-15 11:02:58.623 T [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:734 sendRtspRequest | DESCRIBE rtsp://192.168.74.128/live/123
+2024-08-15 11:02:58.624 T [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:734 sendRtspRequest | SETUP rtsp://192.168.74.128/live/123/streamid=0
+2024-08-15 11:02:58.624 T [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:734 sendRtspRequest | SETUP rtsp://192.168.74.128/live/123/streamid=1
+2024-08-15 11:02:58.624 T [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:734 sendRtspRequest | PLAY rtsp://192.168.74.128/live/123
+2024-08-15 11:02:58.625 D [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:536 handleResPAUSE | seekTo(ms):0
+2024-08-15 11:02:58.625 W [api_tester_player_example] [5538-event poller 1] RtspPlayer.cpp:814 onPlayResult_l | 0 rtsp play success
+2024-08-15 11:02:58.625 D [api_tester_player_example] [5538-event poller 1] MediaSink.cpp:162 emitAllTrackReady | All track ready use 2ms
+2024-08-15 11:02:58.625 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:104 on_mk_play_event_func | play success!
+2024-08-15 11:02:58.625 I [api_tester_player_example] [5538-event poller 1] player_example.cpp:109 on_mk_play_event_func | got video track: H264
+2024-08-15 11:02:58.625 I [api_tester_player_example] [5538-event poller 1] Transcode.cpp:325 getCodec_l | got decoder:h264
+2024-08-15 11:02:58.626 W [api_tester_player_example] [5538-event poller 1] Transcode.cpp:95 checkIfSupportedNvidia_l | libnvcuvid.so.1加载失败:invalid argument
+2024-08-15 11:02:58.626 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:314 getCodec_l | decoder:h264_nvmpi not found
+2024-08-15 11:02:58.626 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:314 getCodec_l | decoder:h264_videotoolbox not found
+2024-08-15 11:02:58.626 I [api_tester_player_example] [5538-event poller 1] Transcode.cpp:325 getCodec_l | got decoder:h264
+2024-08-15 11:02:58.626 I [api_tester_player_example] [5538-event poller 1] Transcode.cpp:551 FFmpegDecoder | 打开解码器成功:h264
+2024-08-15 11:02:58.626 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.626 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+    Last message repeated 10 times
+2024-08-15 11:02:58.637 I [api_tester_player_example] [5538-decoder thread] Transcode.cpp:898 inputFrame | sws_getContext:yuv420p -> bgr24
+2024-08-15 11:02:58.637 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.637 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+    Last message repeated 23 times
+2024-08-15 11:02:58.638 W [api_tester_player_example] [5538-event poller 1] Transcode.cpp:164 addDecodeTask | decode thread start drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.638 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.638 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.639 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.639 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.673 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.673 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.673 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.673 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.710 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.710 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.749 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.749 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.794 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.794 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.829 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.829 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.870 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.870 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.911 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.911 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.950 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.950 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:58.990 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:58.990 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.032 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.033 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.069 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.069 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.110 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.111 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.152 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.152 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.190 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.191 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.229 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.229 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.270 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.270 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.309 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.309 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.349 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.349 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.390 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.390 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.429 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.429 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.471 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.471 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.511 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.511 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.550 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.551 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.590 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.590 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.629 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.630 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.671 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.672 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.710 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.710 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.750 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.750 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.792 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.792 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.831 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.831 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.870 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.870 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.912 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.912 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.950 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.950 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:02:59.990 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:02:59.990 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.030 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.030 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.071 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.072 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.109 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.110 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.153 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.153 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.189 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.189 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.229 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.229 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.271 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.271 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.310 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.310 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.351 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.351 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.392 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.392 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.430 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.430 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.470 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.470 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.510 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.510 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.551 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.551 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.590 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.590 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.631 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.631 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.670 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.671 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.709 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.709 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.750 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.751 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.792 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.793 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.830 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.830 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.872 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.872 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.909 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.910 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.952 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.952 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:00.990 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:00.990 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:01.030 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:01.031 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:01.070 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:01.070 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:01.111 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:01.111 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:01.151 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:01.151 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:01.151 T [api_tester_player_example] [5538-event poller 1] Transcode.cpp:153 addDecodeTask | decode thread drop frame
+2024-08-15 11:03:01.151 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:01.151 I [api_tester_player_example] [5538-event poller 1] Transcode.cpp:157 addDecodeTask | decode thread stop drop frame
+2024-08-15 11:03:01.151 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+2024-08-15 11:03:01.671 D [api_tester_player_example] [5538-event poller 1] player_example.cpp:151 on_track_frame_out | tiktok
+    Last message repeated 13 times
