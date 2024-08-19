@@ -210,12 +210,12 @@ namespace playerkit
         static onceToken token(
             [&outFile] ()
             {
-                outFile.open("output.h264", std::ios::out | std::ios::binary);
+                outFile.open("./output.h264", std::ios::out | std::ios::binary);
                 outFile.close();
             }, nullptr
         );
 
-        outFile.open("output.h264", std::ios::app | std::ios::binary);
+        outFile.open("./output.h264", std::ios::app | std::ios::binary);
         outFile.write(mk_frame_get_data(frame), mk_frame_get_data_size(frame));
         outFile.close();
 

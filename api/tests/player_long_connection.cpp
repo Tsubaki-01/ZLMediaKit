@@ -52,7 +52,7 @@ int main(int argc, char* argv [])
     pid_t pid = getpid();
     bool running = true;
 
-    std::string outputPath("");
+    std::string outputPath("./test/long_connection/");
     std::ofstream outFile((outputPath + "output").data(), std::ios::out);
     if (!outFile.is_open())
     {
@@ -65,13 +65,14 @@ int main(int argc, char* argv [])
 
 
     playerkit::Player player;
-    player.init();
+    player.init(0, 0, 3, "./log");
+    player.setOnPlayEvent(nullptr);
     player.play(argv[1]);
 
     outFile << "pid : " << (pid) << std::endl;
     outFile << "ThreadCount : " << getThreadCount(pid) << std::endl;
     std::thread memoryMonitor(getAverageMemoryUsage, pid, (outputPath), std::ref(running));
-    // std::thread CPUMonitor(monitorPidstat, pid, (outputPath + "CPUMonitor"), std::ref(running));
+    std::thread CPUMonitor(monitorPidstat, pid, (outputPath + "CPUMonitor"), std::ref(running));
 
 
     // 输出提示信息
@@ -79,7 +80,7 @@ int main(int argc, char* argv [])
     // 等待用户输入
     getchar();
 
-    // CPUMonitor.join();
+    CPUMonitor.join();
     running = false;
 
     memoryMonitor.join();

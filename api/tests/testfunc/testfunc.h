@@ -63,7 +63,7 @@ void monitorPidstat(pid_t pid, const std::string output_file, bool& running)
     }
 
     // Run pidstat command and capture the output
-    std::string command = "pidstat -p " + std::to_string(pid) + " -u 1 >> " + output_file;
+    std::string command = "pidstat -p " + std::to_string(pid) + " -u 10 >> " + output_file;
     pid_t ppid = fork();
     int status;
 

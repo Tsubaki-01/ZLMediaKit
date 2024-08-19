@@ -53,3 +53,6 @@ mkv/testv2.mkv
 mkv/testv.mkv
 videos4test/
 3rdpart/
+
+test/
+**/build/

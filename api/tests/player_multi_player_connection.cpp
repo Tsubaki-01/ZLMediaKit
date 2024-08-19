@@ -31,7 +31,7 @@ void getAverageMemoryUsage(pid_t pid, std::string outputPath, bool& running)
         // 将时间戳格式化为字符串
         outFile << "Timestamp: " << std::put_time(now_tm, "%Y-%m-%d %H:%M:%S");
         outFile << "   -------   MemoryUsage : " << memoryUsage << " KB" << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::this_thread::sleep_for(std::chrono::seconds(5));
     }
     outFile.close();
     outFile.open((outputPath + "output").data(), std::ios::app);
@@ -53,7 +53,7 @@ int main(int argc, char* argv [])
     pid_t pid = getpid();
     bool running = true;
 
-    std::string outputPath("");
+    std::string outputPath("./test/multi_player_connection/");
     std::ofstream outFile((outputPath + "output").data(), std::ios::out);
     if (!outFile.is_open())
     {
@@ -66,16 +66,27 @@ int main(int argc, char* argv [])
     std::thread CPUMonitor(monitorPidstat, pid, (outputPath + "CPUMonitor"), std::ref(running));
 
 
-    std::vector<playerkit::Player> players;
-    int cnt = 0;
-    do
+    for (int i = 0;i < 5000;i++)
     {
-        players.emplace_back();
-        players[cnt].init();
-        players[cnt].setOnPlayEvent(nullptr);
-        players[cnt].play(argv[1]);
-    } while (++cnt);
+        playerkit::Player player1;
+        player1.init(0, 2, 3, "./log/player1.log");
+        player1.setOnPlayEvent(nullptr);
+        player1.play(argv[1]);
+        playerkit::Player player2;
+        player2.init(0, 2, 3, "./log/player2.log");
+        player2.setOnPlayEvent(nullptr);
+        player2.play(argv[1]);
+        playerkit::Player player3;
+        player3.init(0, 2, 3, "./log/player3.log");
+        player3.setOnPlayEvent(nullptr);
+        player3.play(argv[1]);
+        playerkit::Player player4;
+        player4.init(0, 2, 3, "./log/player4.log");
+        player4.setOnPlayEvent(nullptr);
+        player4.play(argv[1]);
 
+        std::this_thread::sleep_for(std::chrono::seconds(5));
+    }
 
     // 输出提示信息
     log_info("enter any key to exit");
@@ -87,6 +98,7 @@ int main(int argc, char* argv [])
     memoryMonitor.join();
     CPUMonitor.join();
     outFile.close();
+
     std::this_thread::sleep_for(std::chrono::seconds(3));
     return 0;
 }

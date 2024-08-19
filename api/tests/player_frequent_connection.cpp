@@ -30,7 +30,7 @@ void getAverageMemoryUsage(pid_t pid, std::string outputPath, bool& running)
         // 将时间戳格式化为字符串
         outFile << "Timestamp: " << std::put_time(now_tm, "%Y-%m-%d %H:%M:%S");
         outFile << "   -------   MemoryUsage : " << memoryUsage << " KB" << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::this_thread::sleep_for(std::chrono::seconds(5));
     }
     outFile.close();
     outFile.open((outputPath + "output").data(), std::ios::app);
@@ -44,10 +44,10 @@ void createPlayerLoop(char* arg)
     for (int i = 0;i < 10000;i++)
     {
         playerkit::Player player;
-        player.init(0, 3);
+        player.init(0, 1, 3, "./log");
         player.setOnPlayEvent(nullptr);
         player.play(arg);
-        std::this_thread::sleep_for(std::chrono::milliseconds(50));
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }
 
@@ -63,7 +63,7 @@ int main(int argc, char* argv [])
     pid_t pid = getpid();
     bool running = true;
 
-    std::string outputPath("");
+    std::string outputPath("./test/frequent_connection/");
     std::ofstream outFile((outputPath + "output").data(), std::ios::out);
     if (!outFile.is_open())
     {

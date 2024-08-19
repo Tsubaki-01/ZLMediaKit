@@ -55,7 +55,7 @@ namespace mediakit
         auto it = s_plugins.find(codec);
         if (it == s_plugins.end())
         {
-            WarnL << "Unsupported codec: " << track->getName();
+            // WarnL << "Unsupported codec: " << track->getName();
             return nullptr;
         }
         return it->second->getTrackBySdp(track);
